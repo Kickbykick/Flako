@@ -9,7 +9,6 @@ public class MilkshakeModel {
     MilkShakeListener currentPick;
     ArrayList<MilkShakeListener> milkShakeItemArray;
 
-
     // add toppings and flavor
     // remove toppings and flavor
     // Total price

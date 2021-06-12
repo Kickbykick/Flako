@@ -31,8 +31,10 @@ public class Main extends Application {
         Scene scene = new Scene(new Group());
 
         SummaryView summaryView = new SummaryView();
+        MilkshakeModel milkshakeModel = new MilkshakeModel(); // Scope - main
+        IncrementView incrementView = new IncrementView();
 
-        scene.setRoot(summaryView.vbox);
+        scene.setRoot(incrementView.hBox);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
