@@ -31,7 +31,7 @@ public class MilkshakeModel {
     void removeItem(MilkShakeListener milkShakeItem){
         this.milkShakeItemArray.remove(milkShakeItem);
         milkShakeItem.modelChanged();
-        currentPick = null;
+//        currentPick = null;
 
         if(milkShakeItem instanceof ToppingModel){
             totalPrice -= 0.5;
