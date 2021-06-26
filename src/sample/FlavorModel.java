@@ -16,8 +16,10 @@ public class FlavorModel  implements MilkShakeListener{
 
     void changeQuantity(boolean bIncrease){
         if(bIncrease){
-            flavorQuantity++;
-            flavorTotalPrice += 1;
+            if(flavorQuantity < 7) {
+                flavorQuantity++;
+                flavorTotalPrice += 1;
+            }
         } else {
             if(flavorQuantity > 0) {
                 flavorQuantity--;
@@ -29,5 +31,10 @@ public class FlavorModel  implements MilkShakeListener{
     @Override
     public void modelChanged() {
 
+    }
+
+    @Override
+    public String toString() {
+        return flavorName;
     }
 }

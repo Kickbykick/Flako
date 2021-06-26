@@ -18,8 +18,10 @@ public class ToppingModel implements MilkShakeListener{
 
     void changeQuantity(boolean bIncrease){
         if(bIncrease){
-            toppingQuantity++;
-            toppingTotalPrice += 0.5;
+            if(toppingQuantity < 7) {
+                toppingQuantity++;
+                toppingTotalPrice += 0.5;
+            }
         } else {
             if(toppingQuantity > 0) {
                 toppingQuantity--;

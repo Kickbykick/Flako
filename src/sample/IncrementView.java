@@ -37,7 +37,7 @@ public class IncrementView {
         currentPickText.setStyle("-fx-font: 18 arial;");
         Text pointerText = new Text("Current Pick:  ");
         pointerText.setStyle("-fx-font: 18 arial;");
-        
+
         hBox.getChildren().addAll(addButton, subtractButton, pointerText, currentPickText);
     }
 
